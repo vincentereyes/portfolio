@@ -1,0 +1,20 @@
+<div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand"><span style="font-size: 35px;">👨🏽‍💻</span> Vince Reyes</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li id="homeLink" class="active"><a [routerLink]="['']">Home</a></li>
+                  <li id="projectLink" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li class="project-link"><a [routerLink]="['racecar']">🏎 racecar</a></li>
+                      <li class="project-link"><a [routerLink]="['pinkslips']">📜 pinkslips</a></li>
+                      <li class="project-link"><a [routerLink]="['portfolio']">📁 portfolio</a></li>
+                    </ul>
+                  </li>
+                  <li id="contactLink"><a [routerLink]="['contact']">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+  <router-outlet></router-outlet>
