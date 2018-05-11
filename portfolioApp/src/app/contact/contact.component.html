@@ -1,21 +1,24 @@
-<div class="home">
+<div class="home contacta">
 	<div class="img-container">
 	</div>
 	<h2>Contact Me: </h2>
 	<h4><a href="mailto:vincentejosereyes@gmail.com">vincentejosereyes@gmail.com</a></h4>
-	<form>
+	<form (submit)="onSubmit()" name="contactForm">
 	  <div class="form-group">
-	    <label>Name</label>
-	    <input type="text" class="form-control" id="name"  placeholder="Enter name">
+	    <label>Name <small *ngIf="!(email.name.length > 3)">| enter atleast 4 characters</small>
+	    <small *ngIf="!(email.name.length < 50)">| name over 50 characters</small></label>
+	    <input type="text" class="form-control" id="name"  placeholder="Enter name" name="email.name" [(ngModel)]="email.name" ng-minlength="3" ng-maxlength="50">
 	  </div>
 	  <div class="form-group">
 	    <label>Email</label>
-	    <input type="email" class="form-control" id="email" placeholder="Enter email">
+	    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email.email" [(ngModel)]="email.email">
 	  </div>
 	  <div class="form-group">
-	  	<label>Message</label>
-	    <textarea class="form-control" id="message" placeholder="Enter message" rows="5"></textarea>
+	  	<label>Message<small *ngIf="!(email.message.length > 19)"> | enter atleast 20 characters</small>
+	    <small *ngIf="!(email.message.length < 1000)"> |message over 1000 characters</small></label>
+	    <textarea class="form-control" id="message" placeholder="Enter message" rows="5" name="email.message" [(ngModel)]="email.message" ng-minlength="3" ng-maxlength="1000"></textarea>
+	    
 	  </div>
-	  <button type="submit" class="btn btn-default">Send</button>
+	  <button type="submit" class="btn btn-default btn-send" [disabled]='clicked'>Send</button>
 	</form>
 </div>

@@ -12,11 +12,11 @@ export class AppComponent {
 
   public ngOnInit() {
   	$(document).ready(function() {
-  		$('.home').fadeIn();
   		$('#projectLink').click(function(){
 				document.getElementById('projectLink').classList.add('active');
 				document.getElementById('homeLink').classList.remove('active');
 				document.getElementById('contactLink').classList.remove('active');
+				$('.home').fadeIn();
 			});
   		$('.project-link').click(function() {
 			$('.home').fadeIn();

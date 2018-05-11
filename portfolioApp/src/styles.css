@@ -28,6 +28,10 @@ form {
   margin-left: 15px;
 }
 
+.btn-send {
+  margin-bottom: 20px;
+}
+
 .btn:hover{
   background-color: #396753;
   color: #fff;
@@ -39,7 +43,8 @@ form {
 }
 
 .homediv {
-  margin-left: 20px;
+  margin-left: 5%;
+  text-align: justify;
 }
 
 .dropdown-menu {
@@ -73,6 +78,17 @@ label {
 .buttons {
   margin-top: 25px;
 }
+
+.margintop {
+  margin-top: 10%;
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+
+}
+
 /*.btn-resume {
 
   background-color: #909395;
@@ -109,10 +125,11 @@ body {
 }
 
 div.img-container {
+
   margin: auto;
   content: url("./images/profile.jpeg");
-  width: 35%;
-  height: 35%;
+  width: 30%;
+  height: 30%;
   border-radius: 50%;
 }
 
@@ -124,18 +141,19 @@ div.img-container:hover {
 div.pinkslips-gif {
   margin: auto;
   content: url("./images/pinkslips.gif");
-  width: 90%;
-  height: 90%;
+  width: 60%;
+  height: 60%;
 }
 
 div.portfolio-gif {
   margin: auto;
   content: url("./images/portfolio.gif");
-  width: 90%;
-  height: 90%;
+  width: 60%;
+  height: 60%;
 }
 
 .fa{
+  margin-top: 20px;
   font-size: 35px;
   margin-left: 20px;
 }
@@ -168,7 +186,9 @@ div.portfolio-gif {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .dropwdown-menu:hover {
@@ -176,7 +196,9 @@ div.portfolio-gif {
   background-color: #396753;
 }
 
-
+.small {
+  margin-left: 100px;
+}
 /*
  * Header
  */
@@ -234,6 +256,11 @@ div.portfolio-gif {
   font-weight: bold;
 }
 
+.contacta {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+}
 
 /*
  * Footer
@@ -275,7 +302,7 @@ div.portfolio-gif {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 70%;
   }
 }
 
