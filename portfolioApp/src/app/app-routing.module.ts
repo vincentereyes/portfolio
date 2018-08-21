@@ -11,8 +11,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
-	{ path: 'projects', component: ProjectsComponent },
-	{ path: 'contact', component: ContactComponent },
+	{ path: 'projects', component: PinkslipsComponent },
+	{ path: 'about', component: ContactComponent },
 	{ path: 'pinkslips', component: PinkslipsComponent },
 	{ path: 'racecar', component: RacecarComponent},
 	{ path: 'portfolio', component: PortfolioComponent},

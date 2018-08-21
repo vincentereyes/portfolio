@@ -16,8 +16,7 @@ export class HomeComponent implements OnInit {
   }
 
   buttonClick() {
-  	console.log("pressed")
-  	this._router.navigate(['contact'])
+  	this._router.navigate(['projects'])
   }
 
 }

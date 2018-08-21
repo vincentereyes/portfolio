@@ -114,10 +114,11 @@ body {
   height: 100%;
   background-color: #333;
   font-family: "HelveticaNeue-Thin";
-  background-image: url("./images/background2.jpg");
+  background-image: url("./images/background3.jpg");
   background-size: 100% 100%;
   background-attachment: fixed;
 }
+
 body {
   color: #fff;
   text-align: center;
@@ -127,9 +128,9 @@ body {
 div.img-container {
 
   margin: auto;
-  content: url("./images/profile.jpeg");
-  width: 30%;
-  height: 30%;
+  content: url("./images/profile.JPG");
+  width: 45%;
+  height: 45%;
   border-radius: 50%;
 }
 
@@ -139,6 +140,8 @@ div.img-container:hover {
 }
 
 div.pinkslips-gif {
+  background-color: black;
+  padding: 20px;
   margin: auto;
   content: url("./images/pinkslips.gif");
   width: 60%;
@@ -146,8 +149,37 @@ div.pinkslips-gif {
 }
 
 div.portfolio-gif {
+  background-color: black;
+  padding: 20px;
   margin: auto;
   content: url("./images/portfolio.gif");
+  width: 60%;
+  height: 60%;
+}
+
+div.racecar-gif {
+  background-color: black;
+  padding: 20px;
+  margin: auto;
+  content: url("./images/racecar.gif");
+  width: 60%;
+  height: 60%;
+}
+
+div.surfer-gif {
+  background-color: black;
+  padding: 20px;
+  margin: auto;
+  content: url("./images/surfer.gif");
+  width: 60%;
+  height: 60%;
+}
+
+div.restful-gif {
+  background-color: black;
+  padding: 20px;
+  margin: auto;
+  content: url("./images/restful.gif");
   width: 60%;
   height: 60%;
 }
@@ -234,7 +266,7 @@ div.portfolio-gif {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .masthead-brand {
     float: left;
   }
